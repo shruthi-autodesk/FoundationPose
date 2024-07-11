@@ -1,7 +1,7 @@
 PROJ_ROOT=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 
 # Install mycpp
-cd ${PROJ_ROOT}/mycpp/ && \
+cd ${PROJ_ROOT}/src/foundationpose/mycpp/ && \
 rm -rf build && mkdir -p build && cd build && \
 cmake .. && \
 make -j$(nproc)
